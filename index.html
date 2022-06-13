@@ -13,46 +13,37 @@
 
 </head>
 <body>
+    
+    <!--Header-->
     <header class="container-lg text-center text-white bg-primary p-3">
         <h1>Weather Dashboard</h1>
     </header>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3 bg-light">
-                <h4 class="mt-3">Enter a City:</h4>
-                <div class="search">
-                    <input type="text" class="search-bar" placeholder="Search.." id="city-input">
-                    <button type="submit" id="add"><span class="bi-search"></span></button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md">
-            <div class="row">
-                <div class="col-lg-11 card m-3 d-none" id="weather">
-                    <div class="card">
-                        <h2 class="city"></h2>
-                        <h1 class="temp"></h1>
-                        <div class="humidity"></div>
-                        <div class="wind"></div>
-                        <div class="uv-index"></div>
+    <!-- Container for search of City -->
+    <div class="row">
+        <div class="col-lg-3 bg-light">
+            <h4 class="mt-3">Enter a City:</h4>
+                <form>
+                    <div class="search">
+                        <input type="text" class="search-bar" placeholder="Search.." id="city-input">
+                        <button type="submit" id="searchButton"><span class="bi-search"></span></button>
                     </div>
-                </div>
+                </form>
             </div>
-        </div>
-        <div class="forecast row d-none">
-            <div class="col-12">
-                <h3>5-Day Forecast</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 forecast bg-primary text-white m-2 rounded"></div>
-            <div class="col-md-4 forecast bg-primary text-white m-2 rounded"></div>
-            <div class="col-md-4 forecast bg-primary text-white m-2 rounded"></div>
-            <div class="col-md-4 forecast bg-primary text-white m-2 rounded"></div>
-            <div class="col-md-4 forecast bg-primary text-white m-2 rounded"></div>
-        </div>
         </div>
     </div>
+    <!-- Current & 5 day forcst should be displayed on the right-->
+    <div id="content-right" class="col-md-9 pt-4">
+        <!-- Current weather displayed on top -->
+        <div id="current-weather" class="border rounded"></div>
+        <!-- Five day forecast below the current weather -->
+        <div id="five-day-forecast" class="mt-5"></div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>

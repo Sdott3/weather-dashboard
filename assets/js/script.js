@@ -1,6 +1,10 @@
 var cityinput = document.getElementById("#city-input");
 var search = document.getElementById("#add");
-var city = document.getElementById("#city");
+var currentCity = document.getElementById("#current-city");
+var currentTemp = document.getElementsByClassName("#temp");
+var currentHumidity = document.getElementsByClassName("#humidity");
+var currentWspeed = document.getElementsByClassName("#wind-speed");
+var currentUVindex = document.getElementsByClassName("#uv-index");
 
-
-apik = "5b7723185b34f31fa8ce7661dee07b75"
+/* Custom api key */
+var apiKey = "5b7723185b34f31fa8ce7661dee07b75";
