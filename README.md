@@ -22,9 +22,10 @@ THEN I am again presented with current and future conditions for that city
  * Javascript
  
  ## Website
- 
+ https://sdott3.github.io/weather-dashboard/
  
  ## Screenshot 
- 
+ ![Screenshot 2022-08-12 142524](https://user-images.githubusercontent.com/93238809/184421310-623a96f9-4e8f-445b-9223-e3bc312b3af8.png)
+
 ## Contribution 
 Made with ❤️ by [Shatyana Thomas]
